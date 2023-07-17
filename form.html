@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Formulaire d'abonnement</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="menu">
+            <li class="push">© Witch Sanctuary, 2022.</li>
+            <li class="menu"><a href="page1.html">Accueil</a></li>
+            <li class="menu"><a href="page2.html">Sorcellerie</a></li>
+            <li class="menu"><a href="page3.html">S'abonner</a></li>
+            <li class="menu"><a href="page4.html">À propos</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="conteneur">
+        <h1>Abonnement</h1>
+        <!-- Formulaire avec validation -->
+        <form id="sub" action="form.html" method="get">
+            <div id="infos">
+                <div class="formInput">
+                    <div class="inputName">Prénom</div>
+                    <input class="validation input" id="formPrenom" type="text" name="prenom" value=""/>
+                    <span id="alertePrenom" style="display:none;color:red;">Veuillez entrer votre prénom.</span>
+                </div>
+                <div class="formInput">
+                    <div class="inputName">Nom</div>
+                    <input class="validation input" id="formNom" type="text" name="nom" value=""/>
+                    <span id="alerteNom" style="display:none;color:red;">Veuillez entrer votre nom.</span>
+                </div>
+                <div class="formInput">
+                    <div class="inputEmail">Adresse e-mail</div>
+                    <input class="email input" id="formEmail" type="text" name="Email" value=""/>
+                    <span id="alerteEmail" style="display:none;color:red;">Veuillez entrer votre adresse e-mail.</span>
+                </div>
+                <div class="formInput">
+                    <div class="inputName">Homme<input id="Homme" class="myInput" type="radio" name="Sexe" value="M"/></div>
+                    <div class="inputName">Femme<input id="Femme" class="myInput" type="radio" name="Sexe" value="F"/></div>
+                    <div class="inputName">Non-binaire<input id="Nonbinaire" class="myInput" type="radio" name="Sexe" value="B"/></div>
+                </div>
+                <div class="formInput">
+                    <div class="inputName">Province</div>
+                    <select class="input" id="formProvince">
+                        <option value="Quebec">Québec</option>
+                        <option value="ExterieurQuebec">Extérieur du Québec</option>
+                    </select>
+                    <div class="inputName">Paiement</div>
+                    <select class="input" id="formPaiement">
+                        <option value="MC">Mastercard</option>
+                        <option value="VISA">Visa</option>
+                    </select>
+                    <div class="separation"></div>
+                    <div class="button">
+                        <input type="submit" id="Envoyer" value="Soumettre"/>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Retour" onclick="history.go(-1)">
+                    </div>
+                    <div class="separation"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </main>
+    <footer>
+        Travail pratique pour le cours de W14.
+    </footer>
+</body>
+</html>

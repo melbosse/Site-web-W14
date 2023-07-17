@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="css/style4.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script defer src="scripts/script4.js"> 
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="menu">
+            <li class="push">© Witch Sanctuary, 2022.</li>
+            <li class="menu"><a href="page1.html">Accueil</a></li>
+            <li class="menu"><a href="page2.html">Sorcellerie</a></li>
+            <li class="menu"><a href="page3.html">S'abonner</a></li>
+            <li class="menu"><a href="page4.html">À propos</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+      <h1>Qui sommes-nous ?</h1>
+      <p>Découvrez notre univers en parcourant nos images sur le thème des sorcières.</p>
+      <div class="separation"></div>
+      <!-- Carrousel d'images -->
+      <div class="conteneur">
+        <div class="image disparait">
+          <div class="nombre">1 / 3</div>
+          <img src="images/livre.jpg" style="width:100%">
+        </div>
+        <div class="image disparait">
+          <div class="nombre">2 / 3</div>
+          <img src="images/chandelles.jpg" style="width:100%">
+        </div>
+        <div class="image disparait">
+          <div class="nombre">3 / 3</div>
+          <img src="images/rituel.jpg" style="width:100%">
+        </div>
+        <!-- Boutons -->
+        <a class="precedent" onclick="changer(-1)">&#10094;</a>
+        <a class="suivant" onclick="changer(1)">&#10095;</a>
+      </div>
+    </main>
+      <footer>
+        Travail pratique pour le cours de W14.
+      </footer>
+      
+      <!-- Partie Plug-in -->
+      <div class="floating-chat">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+        <div class="chat">
+            <div class="header">
+                <span class="title">
+                    Des questions ?
+                </span>
+                <button>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                             
+            </div>
+            <ul class="messages">
+                <li class="other">Si vous avez des questions n'hésitez pas à nous contacter.</li>
+                <li class="other">Êtes-vous une sorcière?</li>
+                <li class="self">Je ne pense pas...</li>
+                <li class="other">En êtes-vous certain?</li>
+                <li class="self">Je crois...</li>
+                <li class="other">Vous pouvez toujours tester avec notre calculateur !</li>
+                <li class="self">C'est vrai.</li>
+                <li class="other">N'hésitez pas si vous avez d'autres interrogations.</li>
+                <li class="self">Merci !</li>
+            </ul>
+            <div class="footer">
+                <div class="text-box" contenteditable="true" disabled="true"></div>
+                <button id="sendMessage">Envoyer</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

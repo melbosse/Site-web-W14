@@ -1,0 +1,105 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Century Gothic';
+    background-color: black;
+    color: white;
+}
+/* Barre de navigation  */
+.menu{
+    display: flex;
+    padding: 10px;
+    margin-right: 30px;
+}
+.menu a{
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.menu a:hover {
+    background-color: grey;
+}
+.push{
+    padding: 12px;
+    font-size: 17px;
+    margin-right: auto;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+img{
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    text-align: justify;
+    margin-right: 530px;
+    margin-left: 930px;
+    line-height: 36px;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+    padding-bottom: 1%;
+    text-decoration:underline
+}
+.separation{
+    padding-bottom: 50px;
+}
+/* Calculateur en pourcentage */
+#calculateurSorciere{
+    border: 2px solid white;
+    border-style: dotted;
+    width: 23%;
+    margin-left: 27%;
+}
+#entrees{
+    text-align: center;
+    font-size: smaller;
+    line-height: 26px;
+}
+#resultat{
+    text-align: center;
+    font-size: medium;
+    font-weight: lighter;
+    color:blueviolet;
+}
+/* Bouton du calculateur */
+.button{
+    width:100px;
+    margin: auto;
+    margin-top:10px;
+    border:1px solid white;
+    border-radius:4px;
+    height:40px;
+    text-align:center;
+    padding:5px;
+}
+.button:hover{
+    cursor:pointer;
+    border:3px solid white;
+}
+.input{
+    background-color: white;
+    color: black;
+}
+footer{
+    text-align: left;
+    margin-left: 10px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorcellerie</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script defer src="scripts/script2.js"> 
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="menu">
+            <li class="push">© Witch Sanctuary, 2022.</li>
+            <li class="menu"><a href="page1.html">Accueil</a></li>
+            <li class="menu"><a href="page2.html">Sorcellerie</a></li>
+            <li class="menu"><a href="page3.html">S'abonner</a></li>
+            <li class="menu"><a href="page4.html">À propos</a></li>
+          </ul>
+        </nav>
+      </header>
+        <div class="separation"></div>
+      <main>
+        <div id="haut">
+          <section id="titre">
+            <h1>Sorcellerie</h1>
+          </section>
+          <div class="separation"></div>
+          <div>
+            <section id="image">
+              <img src="images/amethyst.jpg" id="image" height="500" alt="Amethyst"/>
+            </section>
+          </div>
+        </div>
+        <div class="separation"></div>
+        <div id="milieu">
+          <section id="texte">
+            <p>
+              Lors des sortilèges, les pierres précieuses peuvent jouer un rôle important. 
+              L'améthyste qui est représentée sur l'image en est une.
+              Cette dernière à des propriétées apaisantes.
+              Elle permet aussi la purification, ce qui est parfait pour les sorcières.
+            </p>
+          </section>
+        </div>
+        <div class="separation"></div>
+        <!-- Calculateur -->
+        <div id="calculateurSorciere">
+          <div id="titrecalcul">
+            <h2>Êtes-vous une sorcière ?</h2>
+            <h3>Faites le test !</h3>
+          </div>
+          <div id="entrees">
+              <div>Entrez votre nom</div>
+              <input class="input" type="text" id="nom"/>
+              <div>Entrez votre prénom</div>
+              <input class="input" type="text" id="prenom"/>
+              <div class="button">
+                <button onclick="Calcul()">Calculer</button>
+              </div>
+          </div>
+          <div>
+            <h2 id="resultat"></h2>
+          </div>
+        </div>
+      </main>
+    <footer>
+      Travail pratique pour le cours de W14.
+    </footer>
+</body>
+</html>
